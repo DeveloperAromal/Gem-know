@@ -4,8 +4,9 @@ export default function Map() {
   return (
     <section className="py-8 ">
       <div className="max-w-7xl mx-auto p-6">
-        <h1 className="text-center text-3xl text-teal-800 font-bold pb-10">
-          Walk in 
+        <h1 className="text-center text-3xl text-gray-700 font-bold pb-10">
+            <span className="border-l-4 border-1 border-teal-800 mr-2 h-full"></span>
+           Walk in 
         </h1>
         <div className="flex justify-center items-center">
           <iframe

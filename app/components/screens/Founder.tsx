@@ -5,7 +5,7 @@ export default function Founder() {
     <section className="bg-gray-100 p-10 sm:p-20">
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
         <div className="text-center lg:text-left max-w-lg">
-          <h2 className="text-2xl flex items-center justify-center lg:justify-start mb-2">
+          <h2 className="text-2xl  lg:justify-start mb-2">
           <span className="border-l-4 border-teal-800 mr-2"></span>Founder&apos;s Message
           </h2>
           <h2 className="text-3xl md:text-4xl pb-4 text-teal-800 font-semibold">
