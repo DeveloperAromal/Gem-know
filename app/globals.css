@@ -29,3 +29,7 @@ body {
 ::-webkit-scrollbar-track-piece{
   background-color: #d5d5d5;
 }
+.bg-log{
+  background-image: url('../public/log-bg.jpg');
+  background-size: cover;
+}
