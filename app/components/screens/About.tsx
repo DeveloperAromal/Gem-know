@@ -13,7 +13,7 @@ export default function About() {
             <span className="border-l-4 border-teal-800 mr-2 h-full"></span> Who We Are
           </h2>
           <h2 className="text-3xl md:text-4xl pb-4 text-teal-800 font-semibold">
-            About Gem Know Model HSS
+          <span className="border-l-4 border-teal-800 mr-2"></span>About Gem Know Model HSS
           </h2>
           <p className="text-base md:text-lg pb-4">
             At Gem Know School, we empower young minds to excel and grow.

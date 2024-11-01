@@ -86,8 +86,8 @@ export default function CustomHeader() {
           </div>
 
           <ul
-            className={`flex-col gap-2 absolute md:static top-8 left-0 w-full md:w-auto md:flex md:flex-row bg-white transition-transform duration-300 py-20 ${
-              isMenuOpen ? "flex" : "hidden"
+            className={`flex-col gap-2 absolute md:static top-8 left-0 w-full md:w-auto md:flex md:flex-row bg-white transition-transform duration-300  ${
+              isMenuOpen ? "flex py-20" : "hidden"
             } text-teal-700 font-semibold`}
           >
             {[
