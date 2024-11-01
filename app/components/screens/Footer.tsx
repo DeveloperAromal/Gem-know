@@ -78,7 +78,7 @@ export default function Footer() {
             <Link href="" target="_blank">
               developer Aromal
             </Link>
-          </span>{" "}
+          </span>
           All Rights Reserved &copy;
         </p>
       </div>
