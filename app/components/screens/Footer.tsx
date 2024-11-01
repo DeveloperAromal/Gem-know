@@ -74,7 +74,7 @@ export default function Footer() {
       <div className="border-t border-gray-800 mt-8 pt-4 text-center">
         <p>
           Created and developed by{" "}
-          <span className="text-purple-500">
+          <span className="text-sky-300">
             <Link href="" target="_blank">
               developer Aromal
             </Link>

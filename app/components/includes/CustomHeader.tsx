@@ -10,6 +10,7 @@ import {
   faVimeo,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function CustomHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,9 @@ export default function CustomHeader() {
               Engage ATS
             </span>
             <span>|</span>
-            <span className="text-xs md:text-sm cursor-pointer hover:text-yellow-400">Canvas</span>
+            <span className="text-xs md:text-sm cursor-pointer hover:text-yellow-400">
+              Canvas
+            </span>
             <span>|</span>
             <span className="text-xs md:text-sm cursor-pointer hover:text-yellow-400">
               Contact Us
@@ -56,11 +59,12 @@ export default function CustomHeader() {
             </span>
           </div>
         </div>
-        <div className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block">
-          Join ERP
-        </div>
+        <Link href="/dashboard">
+          <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block">
+            Join ERP
+          </button>
+        </Link>
       </header>
-
       {/* MAIN NAV */}
       <header className="w-full bg-white shadow-md">
         <nav className="flex justify-between items-center px-4 md:px-10 h-20">
@@ -68,7 +72,7 @@ export default function CustomHeader() {
             <motion.img
               src="/logo.png"
               alt="Logo"
-              className="h-24 md:h-20 rounded-xl" // Increased logo size for both smaller and larger screens
+              className="h-24 md:h-20 rounded-xl"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -86,7 +90,7 @@ export default function CustomHeader() {
           </div>
 
           <ul
-            className={`flex-col gap-2 absolute md:static top-8 left-0 w-full md:w-auto md:flex md:flex-row bg-white transition-transform duration-300  ${
+            className={`flex-col gap-10 absolute md:static top-8 left-0 w-full md:w-auto md:flex md:flex-row bg-white transition-transform duration-300  ${
               isMenuOpen ? "flex py-20" : "hidden"
             } text-teal-700 font-semibold`}
           >
@@ -99,7 +103,7 @@ export default function CustomHeader() {
             ].map((item, index) => (
               <motion.li
                 key={index}
-                className="cursor-pointer hover:text-yellow-500 p-2 md:p-0 text-center text-sm md:text-base" // Adjusted text size for responsiveness
+                className="cursor-pointer hover:text-yellow-500 p-2 md:p-0 text-center text-2xl md:text-base" // Adjusted text size for responsiveness
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >

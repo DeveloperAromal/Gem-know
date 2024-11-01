@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Founder() {
   return (
@@ -6,25 +7,29 @@ export default function Founder() {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
         <div className="text-center lg:text-left max-w-lg">
           <h2 className="text-2xl  lg:justify-start mb-2">
-          <span className="border-l-4 border-teal-800 mr-2"></span>Founder&apos;s Message
+            <span className="border-l-4 border-teal-800 mr-2"></span>
+            Founder&apos;s Message
           </h2>
           <h2 className="text-3xl md:text-4xl pb-4 text-teal-800 font-semibold">
             Look what our founder says
           </h2>
           <p className="text-base md:text-lg pb-4">
-            At Gem Know School, we empower young minds to excel and grow.
-            Since our affiliation with the Central Board of Secondary Education in 1997,
-            we’ve strived to nurture each student’s potential through a balanced focus
-            on academics and co-curricular activities. Our well-equipped labs, resourceful
-            library, and dedicated sports facilities provide students with every tool they
-            need to explore, innovate, and lead. With discipline, integrity, and a passion
-            for learning at our core, we’re dedicated to shaping confident, resilient
-            individuals ready to make their mark on the world.
+            At Gem Know School, we empower young minds to excel and grow. Since
+            our affiliation with the Central Board of Secondary Education in
+            1997, we’ve strived to nurture each student’s potential through a
+            balanced focus on academics and co-curricular activities. Our
+            well-equipped labs, resourceful library, and dedicated sports
+            facilities provide students with every tool they need to explore,
+            innovate, and lead. With discipline, integrity, and a passion for
+            learning at our core, we’re dedicated to shaping confident,
+            resilient individuals ready to make their mark on the world.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200">
-              Discover More
-            </button>
+            <Link href="#">
+              <button className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200">
+                Discover More
+              </button>
+            </Link>
           </div>
         </div>
 

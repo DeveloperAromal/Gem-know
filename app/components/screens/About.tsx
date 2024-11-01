@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -17,7 +18,8 @@ export default function About() {
         <div className="text-center lg:text-left max-w-lg">
           <div>
             <h2 className="text-2xl  lg:justify-start mb-2">
-              <span className="border-l-4 border-1 border-teal-800 mr-2 h-full"></span>Who We Are
+              <span className="border-l-4 border-1 border-teal-800 mr-2 h-full"></span>
+              Who We Are
             </h2>
             <h2 className="text-3xl md:text-4xl pb-4 text-teal-800 font-semibold">
               About Gem Know Model HSS
@@ -35,9 +37,11 @@ export default function About() {
             resilient individuals ready to make their mark on the world.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <button className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200">
-              Discover More
-            </button>
+            <Link href="#">
+              <button className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200">
+                Discover More
+              </button>
+            </Link>
           </div>
         </div>
       </div>

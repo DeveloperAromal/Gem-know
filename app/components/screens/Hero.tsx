@@ -67,7 +67,7 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] mx-auto">
             {slides[index].caption}
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-bold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] mx-auto mt-4">
+          <p className="text-sm sm:text-xl md:text-2xl lg:text-xl text-gray-300 font-bold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] mx-auto mt-4">
             {slides[index].description}
           </p>
           {/* Centering the button */}
