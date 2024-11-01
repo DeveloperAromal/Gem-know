@@ -60,7 +60,7 @@ export default function CustomHeader() {
           </div>
         </div>
         <Link href="/dashboard">
-          <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block">
+          <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block transition-all duration-300">
             Join ERP
           </button>
         </Link>
