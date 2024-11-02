@@ -54,14 +54,11 @@ export default function CustomHeader() {
               icon={faYoutube}
               className="cursor-pointer hover:text-red-500"
             />
-            <span className="cursor-pointer text-xs md:text-sm hidden lg:block md:block ">
-              ATS Home Page
-            </span>
           </div>
         </div>
         <Link href="/dashboard">
           <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block transition-all duration-300">
-            Join ERP
+            Parent Login
           </button>
         </Link>
       </header>
