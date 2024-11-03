@@ -6,10 +6,12 @@ import {
   faInstagram,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+// import ReverseScroller from "../includes/ReverseScroller";
 
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-tr via-teal-900 from-cyan-800 to-indigo-800 text-white py-8">
+      {/* <ReverseScroller /> */}
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 px-10">
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>

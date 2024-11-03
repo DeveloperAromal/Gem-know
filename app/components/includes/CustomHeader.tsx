@@ -10,13 +10,19 @@ import {
   faVimeo,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
 export default function CustomHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleOpenWindow = () => {
+    const url = 'https://gem-know-dashboard.vercel.app/dashboard'; // Replace with your desired URL
+    const options = 'width=1000,height=600,left=100,top=100,resizable=yes,scrollbars=yes'; // Adjust options as needed
+
+    window.open(url, '_blank', options);
   };
 
   return (
@@ -56,11 +62,9 @@ export default function CustomHeader() {
             />
           </div>
         </div>
-        <Link href="/dashboard">
-          <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block transition-all duration-300">
+          <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block transition-all duration-300" onClick={handleOpenWindow}>
             Parent Login
           </button>
-        </Link>
       </header>
       {/* MAIN NAV */}
       <header className="w-full bg-white shadow-md">

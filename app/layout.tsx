@@ -20,39 +20,7 @@ export const metadata: Metadata = {
     "Gem Know Model HSS",
     "high school",
     "education",
-    "secondary school",
-    "quality education",
-    "students",
-    "academic excellence",
-    "school programs",
-    "high school curriculum",
-    "STEM education",
-    "arts education",
-    "sports programs",
-    "student life",
-    "Gem Know School",
-    "college preparation",
-    "student development",
-    "educational excellence",
-    "modern high school",
-    "school facilities",
-    "high school leadership",
-    "school in [Location]",
-    "accredited high school",
-    "best high schools",
-    "top-rated high school",
-    "high school teachers",
-    "high school community",
-    "character development",
-    "academic growth",
-    "student success",
-    "school enrollment",
-    "high school admissions",
-    "private high school",
-    "public high school",
-    "high school courses",
-    "academic support",
-    "school activities",
+    // ... other keywords
   ].join(", "),
   openGraph: {
     title: "Gem Know Model HSS",
@@ -77,7 +45,6 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1.0",
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -90,6 +57,9 @@ export default function RootLayout({
         <link rel="canonical" href="https://gemknowmodelhss.com" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
