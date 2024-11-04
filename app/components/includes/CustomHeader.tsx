@@ -19,10 +19,11 @@ export default function CustomHeader() {
   };
 
   const handleOpenWindow = () => {
-    const url = 'https://gem-know-dashboard.vercel.app/dashboard'; // Replace with your desired URL
-    const options = 'width=1000,height=600,left=100,top=100,resizable=yes,scrollbars=yes'; // Adjust options as needed
+    const url = "https://gem-know-dashboard.vercel.app/dashboard"; // Replace with your desired URL
+    const options =
+      "width=1000,height=600,left=100,top=100,resizable=yes,scrollbars=yes"; // Adjust options as needed
 
-    window.open(url, '_blank', options);
+    window.open(url, "_blank", options);
   };
 
   return (
@@ -62,9 +63,12 @@ export default function CustomHeader() {
             />
           </div>
         </div>
-          <button className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block transition-all duration-300" onClick={handleOpenWindow}>
-            Parent Login
-          </button>
+        <button
+          className="h-full w-32 md:w-40 text-center py-2 bg-yellow-400 hover:bg-teal-800 text-white ml-4 md:ml-10 hidden lg:block md:block transition-all duration-300"
+          onClick={handleOpenWindow}
+        >
+          Parent Login
+        </button>
       </header>
       {/* MAIN NAV */}
       <header className="w-full bg-white shadow-md">
@@ -111,6 +115,14 @@ export default function CustomHeader() {
                 {item}
               </motion.li>
             ))}
+            <div className="flex items-center justify-center">
+            <button
+              className="text-center px-4 py-2 bg-yellow-400 hover:bg-teal-800 text-white md:ml-10 block lg:hidden md:hidden transition-all duration-300"
+              onClick={handleOpenWindow}
+            >
+              Parent Login
+            </button>
+            </div>
           </ul>
         </nav>
       </header>
