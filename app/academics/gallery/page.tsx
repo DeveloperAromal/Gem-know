@@ -1,7 +1,7 @@
 export default function Gallery(){
     return(
         <section>
-            Gallery page
+            Gallery page of gem know
         </section>
     )
 }
