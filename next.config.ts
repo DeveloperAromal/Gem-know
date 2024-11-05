@@ -1,23 +1,4 @@
-const withPWA = require("@ducanh2912/next-pwa").default({
-  dest: "public",
-  cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
-});
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: ["res.cloudinary.com"],
-  },
-  theme: {
-    extend: {
-      screens: {
-        'print': { 'raw': 'print' },
-      },
-      display: ['responsive', 'group-hover', 'group-focus', 'hover', 'focus', 'print'],
-    },
-  },
-  plugins: [],
-};
-
-module.exports = withPWA(nextConfig);
+export default nextConfig;
