@@ -1,7 +1,23 @@
-import type { NextConfig } from "next";
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
+});
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
+  theme: {
+    extend: {
+      screens: {
+        'print': { 'raw': 'print' },
+      },
+      display: ['responsive', 'group-hover', 'group-focus', 'hover', 'focus', 'print'],
+    },
+  },
+  plugins: [],
 };
 
-export default nextConfig;
+module.exports = withPWA(nextConfig);
