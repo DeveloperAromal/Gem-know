@@ -65,10 +65,8 @@ export default function Hero() {
 
       <div className="absolute inset-0 flex items-center justify-center min-h-screen bg-black bg-opacity-50">
         <div className="text-center px-4 md:px-8 mt-10">
-          {" "}
-          {/* Added mt-10 for top margin */}
           <h1
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] mx-auto"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] mx-auto font-bold"
             style={{ fontFamily: "Nunito", fontWeight: 700 }}
           >
             {slides[index].caption}
@@ -79,7 +77,6 @@ export default function Hero() {
           >
             {slides[index].description}
           </p>
-          {/* Centering the button */}
           <div className="flex justify-center mt-6">
             <button className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200">
               Discover More
