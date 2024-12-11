@@ -43,8 +43,8 @@ const SchoolSpecialties: React.FC = () => {
   }, [counterRefs]);
 
   return (
-    <section className="bg-white py-16" id="specialty">
-      <div className="text-center mb-8 sm:mb-12">
+    <section className="bg-white py-16 bg-floral mix-blend-multiply" id="specialty">
+      <div className="text-center mb-8 sm:mb-12">  
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-700">
           <span className="border-l-4 border-teal-800 mr-2"></span>Our School&apos;s Achievements
         </h2>

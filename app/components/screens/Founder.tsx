@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Founder() {
   return (
-    <section className="bg-gray-100 p-10 sm:p-20">
+    <section className="bg-gray-100 p-10 sm:p-20 bg">
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
         <div className="text-center lg:text-left max-w-lg">
           <h2 className="text-2xl  lg:justify-start mb-2">

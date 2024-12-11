@@ -37,3 +37,14 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.bg{
+  background-image: url('../public/palmleavesshadow.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-floral{
+  background-image: url('../public/floral.jpg');
+  background-size: cover;
+  background-position: center;
+}
