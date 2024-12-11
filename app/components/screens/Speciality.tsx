@@ -62,10 +62,10 @@ const SchoolSpecialties: React.FC = () => {
             <div>
               {isVisible && (
                 <div className="flex items-center">
-                  <h1 className="text-2xl lg:text-4xl md:text-4xl font-bold">
+                  <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold">
                     <CountUp start={0} end={1200} duration={2} delay={0} />
                     <span>+</span>
-                  </h1>
+                  </h2>
                 </div>
               )}
             </div>
@@ -81,10 +81,10 @@ const SchoolSpecialties: React.FC = () => {
             <div>
               {isVisible && (
                 <div className="flex items-center">
-                  <h1 className="text-2xl lg:text-4xl md:text-4xl font-bold">
+                  <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold">
                     <CountUp start={0} end={80} duration={2} delay={0} />
                     <span>+</span>
-                  </h1>
+                  </h2>
                 </div>
               )}
             </div>
@@ -100,10 +100,10 @@ const SchoolSpecialties: React.FC = () => {
             <div>
               {isVisible && (
                 <div className="flex items-center">
-                  <h1 className="text-2xl lg:text-4xl md:text-4xl font-bold">
+                  <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold">
                     <CountUp start={0} end={30} duration={2} delay={0} />
                     <span>+</span>
-                  </h1>
+                  </h2>
                 </div>
               )}
             </div>
@@ -119,10 +119,10 @@ const SchoolSpecialties: React.FC = () => {
             <div>
               {isVisible && (
                 <div className="flex items-center">
-                  <h1 className="text-2xl lg:text-4xl md:text-4xl font-bold">
+                  <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold">
                     <CountUp start={0} end={15} duration={2} delay={0} />
                     <span>+</span>
-                  </h1>
+                  </h2>
                 </div>
               )}
             </div>

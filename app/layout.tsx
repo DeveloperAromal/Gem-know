@@ -1,26 +1,19 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import "@fontsource/nunito";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Gem Know Model HSS | High School Education",
   description: "Discover the excellence in education at Gem Know Model HSS, providing top-notch high school education for future leaders.",
   keywords: [
     "Gem Know Model HSS",
-    "high school",
-    "education",
-    // ... other keywords
+    "High School",
+    "Education",
+    "Top Education",
+    "Gem Know",
+    "Quality High School Education",
+
   ].join(", "),
   openGraph: {
     title: "Gem Know Model HSS",
@@ -58,7 +51,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className="antialiased" style={{ fontFamily: "Nunito"}}>
         {children}
       </body>
     </html>

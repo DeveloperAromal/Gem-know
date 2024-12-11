@@ -50,9 +50,9 @@ const Contact = () => {
           </p>
         </div>
         <div className="w-full lg:w-1/2 p-6">
-          <h1 className="text-3xl text-teal-500 text-center font-bold mb-6">
+          <h2 className="text-3xl text-teal-500 text-center font-bold mb-6">
             Contact Us
-          </h1>
+          </h2>
           <form className="space-y-4">
             <div>
               <input

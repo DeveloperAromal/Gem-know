@@ -33,7 +33,7 @@ export default function CustomHeader() {
         <div className="flex gap-4 pb-1">
           <div className="flex items-center space-x-2 text-white">
             <span className="text-xs md:text-sm cursor-pointer hover:text-yellow-400">
-              Engage ATS
+              Engage Gem Know
             </span>
             <span>|</span>
             <span className="text-xs md:text-sm cursor-pointer hover:text-yellow-400">
