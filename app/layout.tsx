@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "@fontsource/nunito";
 
-
 export const metadata: Metadata = {
-  title: "Gem Know Model HSS | High School Education",
+  title: "Gem Know Model HSS",
   description: "Discover the excellence in education at Gem Know Model HSS, providing top-notch high school education for future leaders.",
   keywords: [
     "Gem Know Model HSS",
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
     "Top Education",
     "Gem Know",
     "Quality High School Education",
-
   ].join(", "),
   openGraph: {
     title: "Gem Know Model HSS",
@@ -35,7 +33,11 @@ export const metadata: Metadata = {
     description: "Join Gem Know Model HSS and discover excellence in education for future leaders.",
     images: ["/images/twitter-image.jpg"],
   },
-  viewport: "width=device-width, initial-scale=1.0",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
@@ -51,7 +53,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className="antialiased" style={{ fontFamily: "Nunito"}}>
+      <body className="antialiased" style={{ fontFamily: "Nunito" }}>
         {children}
       </body>
     </html>
