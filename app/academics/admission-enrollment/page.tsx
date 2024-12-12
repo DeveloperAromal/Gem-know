@@ -99,7 +99,7 @@ export default function AdmissionEnrollment() {
       <section className="pt-40 bg-gray-50 min-h-screen">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold text-teal-700">
-            Application for Admission {newYear}-{nextYearFirstTwo}
+            Application for Admission <span className="text-yellow-500">{newYear}-{nextYearFirstTwo}</span>
           </h2>
           <p className="text-gray-500 mt-2">
             We are excited to assist you with your enquiry! Please fill out the
