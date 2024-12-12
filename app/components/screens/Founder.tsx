@@ -14,15 +14,15 @@ export default function Founder() {
             Look what our founder says
           </h2>
           <p className="text-base md:text-lg pb-4">
-            At Gem Know School, we empower young minds to excel and grow. Since
-            our affiliation with the Central Board of Secondary Education in
-            1997, we’ve strived to nurture each student’s potential through a
-            balanced focus on academics and co-curricular activities. Our
-            well-equipped labs, resourceful library, and dedicated sports
-            facilities provide students with every tool they need to explore,
-            innovate, and lead. With discipline, integrity, and a passion for
-            learning at our core, we’re dedicated to shaping confident,
-            resilient individuals ready to make their mark on the world.
+            We are a prestigious institution committed to preparing children for
+            future challenges. At Gem-Know, we emphasize excellence in academics
+            and values like discipline, courtesy, and social sensitivity. Our
+            vision is to foster holistic development, empowering students to
+            become responsible contributors to society. Through innovative
+            online and offline programs, we nurture creativity and
+            out-of-the-box thinking. With a strong focus on academic success and
+            the physical, mental, and emotional well-being of students, we aim
+            to shape their fullest potential under expert guidance.
           </p>
           <div className="flex justify-center lg:justify-start">
             <Link href="#">
