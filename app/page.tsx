@@ -13,6 +13,9 @@ import Contact from "./components/screens/Contact";
 import Footer from "./components/screens/Footer";
 import AdmissionPopUp from "./components/includes/PopUp";
 import { useEffect, useState } from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import SideBanner from "./components/includes/SideBanner";
+
 
 export default function LandingPage() {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -41,6 +44,18 @@ export default function LandingPage() {
       <Map />
       <Contact />
       <Footer />
+      <SideBanner />
+      <FloatingWhatsApp
+          phoneNumber="+918086023123"
+          accountName="Gem Know Model HSS"
+          darkMode={true}
+          notificationSound={true}
+          allowClickAway={false}
+          chatboxHeight={450}
+          notification={true}
+          className="text-black"
+          avatar="/logo-round.jpg"
+        />
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <AdmissionPopUp closeModal={closeModal} />

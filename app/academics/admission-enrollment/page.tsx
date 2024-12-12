@@ -423,15 +423,29 @@ export default function AdmissionEnrollment() {
                 Last Grade Studied{" "}
                 <span className="text-xl text-red-600">*</span>
               </label>
-              <input
-                type="text"
-                id="lastGrade"
-                className="w-full border border-teal-300 rounded-md p-2 focus:ring-2 focus:ring-teal-600"
-                placeholder="Enter last grade studied"
-                value={formData.lastGrade}
-                onChange={handleChange}
-                required
-              />
+              <select
+               id="lastGrade"
+               className="w-full border border-teal-300 rounded-md p-2 focus:ring-2 focus:ring-teal-600"
+               value={formData.lastGrade}
+               onChange={handleChange}
+               required
+              >
+                <option value="">Select Standard</option>
+                <option value="UKG">UKG</option>
+                <option value="LKG">LKG</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="+1">+1</option>
+                <option value="+2">+2</option>
+              </select>
             </div>
             <div>
               <label

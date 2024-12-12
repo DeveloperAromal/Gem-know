@@ -24,6 +24,7 @@
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-countup": "^6.5.3",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react-floating-whatsapp": "^5.0.8",
     "react-password-strength-bar": "^0.4.1",
     "react-toastify": "^10.0.6",
     "resend": "^4.0.1-alpha.0",

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "@fontsource/nunito";
+import SideBanner from "../includes/SideBanner";
 
 interface Slide {
   image: string;
@@ -84,6 +85,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <SideBanner />
     </section>
   );
 }
