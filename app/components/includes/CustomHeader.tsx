@@ -77,6 +77,8 @@ export default function CustomHeader() {
             <motion.img
               src="/logo.png"
               alt="Logo"
+              width={230}
+              height={200}
               className="h-24 md:h-20 rounded-xl"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}

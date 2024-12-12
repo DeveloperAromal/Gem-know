@@ -38,7 +38,6 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  // Preload images
   useEffect(() => {
     const preloadImages = (imageUrls: string[]) => {
       imageUrls.forEach((url) => {
@@ -50,7 +49,6 @@ export default function Hero() {
     const imageUrls = slides.map((slide) => slide.image);
     preloadImages(imageUrls);
 
-    // Check if all images are loaded
     const imagesLoaded = imageUrls.map((url) => {
       return new Promise((resolve) => {
         const img = new Image();
@@ -63,7 +61,6 @@ export default function Hero() {
       setLoading(false);
     });
 
-    // Change slide every 5 seconds
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000);
@@ -85,7 +82,7 @@ export default function Hero() {
                   className="absolute inset-0 w-full h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${slide.image})`,
-                    backgroundColor: "transparent", // Fallback color during image load
+                    backgroundColor: "transparent", 
                   }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -97,7 +94,7 @@ export default function Hero() {
       </AnimatePresence>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-50">
-        <div className="text-center px-4 md:px-8 mt-40"> {/* Adjusted mt-20 to push text a bit lower */}
+        <div className="text-center px-4 md:px-8 mt-40">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] mx-auto"
             style={{ fontFamily: "Nunito", fontWeight: 700 }}
