@@ -80,7 +80,7 @@ export default function AdmissionEnrollment() {
 
   return (
     <section>
-       <ToastContainer
+      <ToastContainer
         theme="dark"
         position="top-right"
         autoClose={3000}
@@ -414,34 +414,33 @@ export default function AdmissionEnrollment() {
             </div>
           </div>
 
-        <div>
-
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-6">
-            <label
-              htmlFor="lastGrade"
-              className="block text-gray-700 font-medium"
-            >
-              Last Grade Studied <span className="text-xl text-red-600">*</span>
-            </label>
-            <input
-              type="text"
-              id="lastGrade"
-              className="w-full border border-teal-300 rounded-md p-2 focus:ring-2 focus:ring-teal-600"
-              placeholder="Enter last grade studied"
-              value={formData.lastGrade}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="category"
-              className="block text-gray-700 font-medium"
-            >
-              Select Category <span className="text-xl text-red-600">*</span>
-            </label>
-            <select
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-6">
+            <div>
+              <label
+                htmlFor="lastGrade"
+                className="block text-gray-700 font-medium"
+              >
+                Last Grade Studied{" "}
+                <span className="text-xl text-red-600">*</span>
+              </label>
+              <input
+                type="text"
+                id="lastGrade"
+                className="w-full border border-teal-300 rounded-md p-2 focus:ring-2 focus:ring-teal-600"
+                placeholder="Enter last grade studied"
+                value={formData.lastGrade}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="category"
+                className="block text-gray-700 font-medium"
+              >
+                Select Category <span className="text-xl text-red-600">*</span>
+              </label>
+              <select
                 id="category"
                 className="w-full border border-teal-300 rounded-md p-2 focus:ring-2 focus:ring-teal-600"
                 value={formData.category}
@@ -456,8 +455,8 @@ export default function AdmissionEnrollment() {
                 <option value="EWS">EWS</option>
                 <option value="Others">Others</option>
               </select>
+            </div>
           </div>
-        </div>
 
           <div className="text-center mt-8">
             <button
