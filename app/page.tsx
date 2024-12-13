@@ -54,7 +54,7 @@ export default function LandingPage() {
           chatboxHeight={450}
           notification={true}
           className="text-black"
-          avatar="/logo-round.jpg"
+          avatar="/logo-roundco.avif"
         />
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">

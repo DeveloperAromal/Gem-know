@@ -12,22 +12,22 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/bg1.jpg",
+    image: "/bg1co.avif",
     caption: "Gem Know Model Higher Secondary School",
     description: "A place where dreams take flight and futures are shaped.",
   },
   {
-    image: "/bg2.jpg",
+    image: "/bg2co.avif",
     caption: "Heading back to school?",
     description: "Embrace the journey of learning and discovery.",
   },
   {
-    image: "/bg3.jpg",
+    image: "/bg3co.avif",
     caption: "Building a Brighter Tomorrow",
     description: "Together, we cultivate the leaders of tomorrow.",
   },
   {
-    image: "/bg4.jpg",
+    image: "/bg4co.avif",
     caption: "Where Knowledge Meets Excellence",
     description: "Join us in a pursuit of excellence and lifelong learning.",
   },

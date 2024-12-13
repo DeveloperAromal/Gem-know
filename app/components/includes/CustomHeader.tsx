@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -75,7 +76,7 @@ export default function CustomHeader() {
         <nav className="flex justify-between items-center px-4 md:px-10 h-20">
           <div className="flex items-center space-x-2 md:space-x-3">
             <motion.img
-              src="/logo.png"
+              src="/logoco.avif"
               alt="Logo"
               width={230}
               height={200}
@@ -102,11 +103,11 @@ export default function CustomHeader() {
             } text-teal-700 font-semibold`}
           >
             {[
-              "Who We Are",
-              "Membership",
-              "Accreditation",
-              "Resources",
-              "Events",
+              { name: "Who We Are", href: "/academics/who-we-are" },
+              { name: "Membership", href: "/membership" },
+              { name: "Accreditation", href: "/accreditation" },
+              { name: "Resources", href: "/resources" },
+              { name: "Events", href: "/events" },
             ].map((item, index) => (
               <motion.li
                 key={index}
@@ -114,16 +115,16 @@ export default function CustomHeader() {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                {item}
+                <Link href={item.href}>{item.name}</Link>
               </motion.li>
             ))}
             <div className="flex items-center justify-center">
-            <button
-              className="text-center px-4 py-2 bg-yellow-400 hover:bg-teal-800 text-white md:ml-10 block lg:hidden md:hidden transition-all duration-300"
-              onClick={handleOpenWindow}
-            >
-              Parent Login
-            </button>
+              <button
+                className="text-center px-4 py-2 bg-yellow-400 hover:bg-teal-800 text-white md:ml-10 block lg:hidden md:hidden transition-all duration-300"
+                onClick={handleOpenWindow}
+              >
+                Parent Login
+              </button>
             </div>
           </ul>
         </nav>

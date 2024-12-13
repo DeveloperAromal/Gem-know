@@ -33,18 +33,18 @@ body {
   background-size: cover;
 }
 .bg-school{
-  background-image: url('../public/bg2.jpg');
+  background-image: url('../public/bg2co.avif');
   background-size: cover;
   background-position: center;
 }
 
 .bg{
-  background-image: url('../public/palmleavesshadow.jpg');
+  background-image: url('../public/palmleavesshadowco.avif');
   background-size: cover;
   background-position: center;
 }
 .bg-floral{
-  background-image: url('../public/floral.jpg');
+  background-image: url('../public/floralco.avif');
   background-size: cover;
   background-position: center;
 }

@@ -35,7 +35,7 @@ export default function Founder() {
 
         <div className="w-full lg:w-[500px] flex justify-center">
           <Image
-            src="/about.png"
+            src="/aboutco.avif"
             alt="about"
             width={600}
             height={600}
