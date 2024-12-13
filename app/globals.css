@@ -28,10 +28,6 @@ body {
 ::-webkit-scrollbar-track-piece{
   background-color: #d5d5d5;
 }
-.bg-log{
-  background-image: url('../public/log-bg.jpg');
-  background-size: cover;
-}
 .bg-school{
   background-image: url('../public/bg2co.avif');
   background-size: cover;
