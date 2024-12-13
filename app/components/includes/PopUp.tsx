@@ -21,7 +21,7 @@ export default function AdmissionPopUp({ closeModal }: AdmissionPopUpProps) {
           Admission Started!
         </h1>
         <Image
-          src="/bg1.jpg"
+          src="/bg1co.avif"
           alt="Admission Started Banner"
           className="w-full h-auto rounded-md mb-4"
           width={500}
