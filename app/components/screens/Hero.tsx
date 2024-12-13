@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "@fontsource/nunito";
-import SideBanner from "../includes/SideBanner";
+import dynamic from "next/dynamic";
 
 interface Slide {
   image: string;
@@ -34,33 +33,12 @@ const slides: Slide[] = [
   },
 ];
 
+const SideBanner = dynamic(() => import("../includes/SideBanner"), { ssr: false });
+
 export default function Hero() {
   const [index, setIndex] = useState(0);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const preloadImages = (imageUrls: string[]) => {
-      imageUrls.forEach((url) => {
-        const img = new Image();
-        img.src = url;
-      });
-    };
-
-    const imageUrls = slides.map((slide) => slide.image);
-    preloadImages(imageUrls);
-
-    const imagesLoaded = imageUrls.map((url) => {
-      return new Promise((resolve) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = resolve;
-      });
-    });
-
-    Promise.all(imagesLoaded).then(() => {
-      setLoading(false);
-    });
-
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000);
@@ -73,45 +51,34 @@ export default function Hero() {
   return (
     <section className="h-screen w-full relative overflow-hidden">
       <AnimatePresence>
-        {!loading &&
-          slides.map(
-            (slide, i) =>
-              i === index && (
-                <motion.div
-                  key={i}
-                  className="absolute inset-0 w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${slide.image})`,
-                    backgroundColor: "transparent", 
-                  }}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
-                />
-              )
-          )}
+        <motion.div
+          key={index}
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${slides[index].image})`,
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        />
       </AnimatePresence>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-50">
         <div className="text-center px-4 md:px-8 mt-40">
-          <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-extrabold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] mx-auto"
-            style={{ fontFamily: "Nunito", fontWeight: 700 }}
-          >
+          <h1 className="font-nunito font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] mx-auto">
             {slides[index].caption}
           </h1>
-          <p
-            className="text-sm sm:text-xl md:text-2xl lg:text-xl text-gray-300 font-bold max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] mx-auto mt-4"
-            style={{ fontFamily: "Nunito", fontWeight: 400 }}
-          >
+          <p className="font-nunito text-gray-300 font-bold text-sm sm:text-xl md:text-2xl lg:text-xl mt-4">
             {slides[index].description}
           </p>
-          <div className="flex justify-center mt-6">
-            <button className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200">
-              Discover More
-            </button>
-          </div>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-yellow-500 px-8 py-3 md:px-10 md:py-4 font-bold text-white hover:bg-teal-800 transition-all duration-200 mt-6"
+          >
+            Discover More
+          </motion.button>
         </div>
       </div>
       <SideBanner />
